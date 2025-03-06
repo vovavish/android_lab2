@@ -36,7 +36,7 @@ class ProductAdapter(
 
         fun bind(product: FakeStoreProduct) {
             title.text = product.title
-            price.text = "$${product.price}"
+            price.text = itemView.context.getString(R.string.price_format, product.price)
             Glide.with(itemView.context).load(product.image).into(image)
             image.contentDescription = "Картинка: ${product.title}"
         }

@@ -18,7 +18,7 @@ class ProductDetailsActivity : AppCompatActivity() {
         val product = intent.getSerializableExtra("PRODUCT") as FakeStoreProduct
 
         binding.detailTitle.text = product.title
-        binding.detailPrice.text = "$${product.price}"
+        binding.detailPrice.text = getString(R.string.price_format, product.price)
         binding.detailDescription.text = product.description
         Glide.with(this).load(product.image).into(binding.detailImage)
 
