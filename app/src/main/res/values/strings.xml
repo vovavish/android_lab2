@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Vishnyakov_lab2</string>
     <string name="price_format">$%1$.2f</string>
+    <string name="product_image_alt">Картинка продукта</string>
+    <string name="share_button">Поделиться продуктом</string>
 </resources>

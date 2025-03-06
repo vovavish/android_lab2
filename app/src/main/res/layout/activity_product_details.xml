@@ -10,7 +10,8 @@
         android:id="@+id/detailImage"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/product_image_alt"/>
 
     <TextView
         android:id="@+id/detailTitle"
@@ -35,5 +36,5 @@
         android:id="@+id/shareButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Поделиться продуктом" />
+        android:text="@string/share_button" />
 </LinearLayout>
